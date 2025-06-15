@@ -79,6 +79,24 @@ function FilterManager({ onSearch,  }) {
                 </select>
             </div>
             <div className="filter-group">
+                <label htmlFor="property_type">Property Type: </label>
+                <select id="property_type" name="property_type" value={filter.property_type} onChange={handleChange}>
+                    <option value="">Select Property Type</option>
+                    <option value="1">One-to-four family dwelling (other than manufactured housing)</option>
+                    <option value="2">Manufactured housing</option>
+                    <option value="3">Multifamily dwelling</option>
+                </select>
+            </div>
+            <div className="filter-group">
+                <label htmlFor="property_type">Property Type: </label>
+                <select id="property_type" name="property_type" value={filter.property_type} onChange={handleChange}>
+                    <option value="">Select Property Type</option>
+                    <option value="1">One-to-four family dwelling (other than manufactured housing)</option>
+                    <option value="2">Manufactured housing</option>
+                    <option value="3">Multifamily dwelling</option>
+                </select>
+            </div>
+            <div className="filter-group">
                 <label htmlFor="applicantIncomeRangeMin">Applicant Income Range: </label>
                 <input
                     type="number"
